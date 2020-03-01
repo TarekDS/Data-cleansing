@@ -43,11 +43,4 @@ mam.loc[toohigh, "BI-RADS"] = 6
 # the distribution of this column has a right tail with outliers on the higher side
 #we removed the outliers by limiting the data set to a certain value and replacing the
 #execing values with the max limit. 
------------------------------------------------------------------------------------------
-I have questions regarding the difference btw the following statements 
-In the earlier lessons we have learned to use Median but in the questions 
-the correct answer was nanmedian
-Heart.loc[HasNan, "chol"] = np.median(Heart.loc[:,"chol"])
-#output  67.65771142295964
-Heart.loc[HasNan, "chol"] = np.nanmedian(Heart.loc[:,"chol"])
-#output  64.98224504483035
+
